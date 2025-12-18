@@ -1,7 +1,7 @@
 # Olá, eu sou Luiz Guilherme! 👋
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=003366&height=200&section=header&text=Pesquisador%20em%20IA%20&%20Robótica&fontSize=50&animation=fadeIn&fontAlignY=38&desc=UFMT%20|%20FATA%20|%20Acessibilidade&descAlignY=55&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=007BFF&height=200&section=header&text=Pesquisador%20em%20IA%20&%20Robótica&fontSize=50&animation=fadeIn&fontAlignY=38&desc=UFMT%20|%20FATA%20|%20Acessibilidade&descAlignY=55&descAlign=50" width="100%"/>
 </div>
 
 ### 🚀 Sobre Mim
