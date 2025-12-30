@@ -14,25 +14,14 @@ Sou estudante de Ciência da Computação na **UFMT** e Técnico em Mecatrônica
 - ⚡ **Foco:** Criar tecnologia assistiva acessível e eficiente.
 
 ---
-
 ### 🛠️ Tech Stack & Ferramentas
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,go,cpp,arduino,linux,git,vscode,figma&perline=12" />
+  <img src="https://skillicons.dev/icons?i=python,go,cpp,java,arduino,mongodb,mysql,postgres,docker,linux,git,vscode,figma&perline=12" />
 </div>
 
 ---
 
-### 📊 Estatísticas do GitHub
-
-<div align="center">
-  <a href="https://github.com/luizgsantos-dev">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=luizgsantos-dev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizgsantos-dev&layout=compact&theme=tokyonight"/>
-  </a>
-</div>
-
----
 
 ### 📫 Vamos Conectar?
 
