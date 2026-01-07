@@ -8,7 +8,8 @@
 
 Sou estudante de Ciência da Computação na **UFMT** e Técnico em Mecatrônica. Minha paixão é conectar software e hardware para resolver problemas reais.
 
-- 🔭 Atualmente, sou **Pesquisador no FATA**, liderando o desenvolvimento de módulos de IA para os robôs **OTTO** e **BITI** (focados em alfabetização de crianças com TEA/TDAH).
+- 🔭 Atualmente, sou **Pesquisador no FATA**, desenvolvendo módulos de IA para os robôs **OTTO** e **BITI** (focados em alfabetização de crianças com TEA/TDAH).
+- 🤖 Responsável pelo **desenvolvimento eletrônico e mecânico** dos robôs, incluindo design de circuitos e manutenção de hardware.
 - 🎓 Atuo na liderança estudantil como **Presidente do Centro Acadêmico (CACOMP)** e **Vice-Presidente da Atlética (AAAIC - Trojan)**.
 - 🌱 Estou aprofundando estudos em **Clonagem de Voz (SVC)**, **Visão Computacional** e **Sistemas Embarcados**.
 - ⚡ **Foco:** Criar tecnologia assistiva acessível e eficiente.
