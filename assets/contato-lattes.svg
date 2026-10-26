@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="64" viewBox="0 0 280 64" role="img" aria-label="Lattes: currículo no CNPq">
+  <style>
+    .icone { fill: none; stroke: #3CC6B4; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .icone .cheio { fill: #3CC6B4; stroke: none; }
+  </style>
+  <rect x="0.5" y="0.5" width="279" height="63" rx="12" fill="#1B2330" stroke="#2C3748"/>
+  <rect x="12" y="12" width="40" height="40" rx="10" fill="#3CC6B4" fill-opacity="0.14"/>
+  <g class="icone" transform="translate(20 20)"><path d="M6,3 H14 L18,7 V21 H6 Z M14,3 V7 H18 M9,10 H12 M9,13.5 H15 M9,17 H15"/></g>
+  <text x="66" y="29" fill="#F0F3F7" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700">Lattes</text>
+  <text x="66" y="47" fill="#9AA6B8" font-family="'Cascadia Code', 'SF Mono', Consolas, 'Liberation Mono', monospace" font-size="12">currículo no CNPq</text>
+  <path d="M254,36 L262,28 M256,28 H262 V34" fill="none" stroke="#F0A43A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

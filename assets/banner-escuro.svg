@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="titulo">
+  <title id="titulo">Luiz Guilherme dos Santos</title>
+  <defs>
+    <pattern id="grade" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#1E2A3B"/>
+    </pattern>
+    <linearGradient id="esmaece" x1="0" x2="1">
+      <stop offset="0.35" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.75" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="mascara"><rect width="1200" height="300" fill="url(#esmaece)"/></mask>
+    <linearGradient id="onda" x1="610" x2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0A43A" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#F0A43A"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .barra { fill: url(#onda); transform-box: fill-box; transform-origin: center;
+             animation: respira 1.8s ease-in-out infinite alternate; }
+    .trilha { fill: none; stroke: #3CC6B4; stroke-width: 2.5; stroke-linejoin: round; }
+    .trilha circle { fill: #0F1622; }
+    .trilha .cheio { fill: #3CC6B4; stroke: none; }
+    .pulso { fill: none; stroke: #F0A43A; stroke-width: 3; stroke-linecap: round;
+             stroke-dasharray: 14 600; stroke-dashoffset: 614; animation: corre 3.6s linear infinite; }
+    @keyframes respira { from { transform: scaleY(0.55); } to { transform: scaleY(1); } }
+    @keyframes corre { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .barra { animation: none; } .pulso { display: none; } }
+  </style>
+
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="20" fill="#0F1622" stroke="#1F2A3A"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="20" fill="url(#grade)" mask="url(#mascara)"/>
+
+  <text x="64" y="70" fill="#F0A43A" font-family="'Cascadia Code', 'SF Mono', Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2">DESENVOLVIMENTO · AUTOMAÇÃO · IA ASSISTIVA</text>
+  <text x="62" y="136" fill="#E8ECF2" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1">Luiz Guilherme</text>
+  <text x="62" y="200" fill="#E8ECF2" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1">dos Santos</text>
+  <text x="64" y="246" fill="#8B98AB" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18">UFMT · Grupo Vivart · FATA · Cuiabá, MT</text>
+
+  <g><rect class="barra" style="animation-delay:-0.00s" x="610" y="146" width="6" height="8" rx="3"/><rect class="barra" style="animation-delay:-0.13s" x="624" y="143" width="6" height="14" rx="3"/><rect class="barra" style="animation-delay:-0.26s" x="638" y="137" width="6" height="26" rx="3"/><rect class="barra" style="animation-delay:-0.39s" x="652" y="128" width="6" height="44" rx="3"/><rect class="barra" style="animation-delay:-0.52s" x="666" y="133" width="6" height="34" rx="3"/><rect class="barra" style="animation-delay:-0.65s" x="680" y="121" width="6" height="58" rx="3"/><rect class="barra" style="animation-delay:-0.78s" x="694" y="109" width="6" height="82" rx="3"/><rect class="barra" style="animation-delay:-0.91s" x="708" y="118" width="6" height="64" rx="3"/><rect class="barra" style="animation-delay:-1.04s" x="722" y="130" width="6" height="40" rx="3"/><rect class="barra" style="animation-delay:-1.17s" x="736" y="106" width="6" height="88" rx="3"/><rect class="barra" style="animation-delay:-1.30s" x="750" y="94" width="6" height="112" rx="3"/><rect class="barra" style="animation-delay:-1.43s" x="764" y="111" width="6" height="78" rx="3"/><rect class="barra" style="animation-delay:-1.56s" x="778" y="123" width="6" height="54" rx="3"/><rect class="barra" style="animation-delay:-1.69s" x="792" y="102" width="6" height="96" rx="3"/><rect class="barra" style="animation-delay:-1.82s" x="806" y="115" width="6" height="70" rx="3"/><rect class="barra" style="animation-delay:-1.95s" x="820" y="127" width="6" height="46" rx="3"/><rect class="barra" style="animation-delay:-2.08s" x="834" y="121" width="6" height="58" rx="3"/><rect class="barra" style="animation-delay:-2.21s" x="848" y="133" width="6" height="34" rx="3"/><rect class="barra" style="animation-delay:-2.34s" x="862" y="139" width="6" height="22" rx="3"/><rect class="barra" style="animation-delay:-2.47s" x="876" y="143" width="6" height="14" rx="3"/><rect class="barra" style="animation-delay:-2.60s" x="890" y="146" width="6" height="8" rx="3"/></g>
+  <g class="trilha">
+    <path d="M904,110 H934 L984,60 H1104"/><path d="M904,130 H954 L988,96 H1060"/><path d="M904,150 H1034"/><path d="M904,170 H954 L988,204 H1060"/><path d="M904,190 H934 L984,240 H1104"/>
+    <rect x="1034" y="124" width="60" height="52" rx="6"/>
+    <path d="M1046,116 V124 M1046,176 V184"/><path d="M1058,116 V124 M1058,176 V184"/><path d="M1070,116 V124 M1070,176 V184"/><path d="M1082,116 V124 M1082,176 V184"/>
+    <circle cx="1045" cy="135" r="2.5" class="cheio"/>
+    <path d="M1094,150 H1134"/>
+    <circle cx="1140" cy="150" r="6"/>
+    <circle cx="904" cy="110" r="3" class="cheio"/><circle cx="1110" cy="60" r="6"/><circle cx="904" cy="130" r="3" class="cheio"/><circle cx="1066" cy="96" r="6"/><circle cx="904" cy="150" r="3" class="cheio"/><circle cx="904" cy="170" r="3" class="cheio"/><circle cx="1066" cy="204" r="6"/><circle cx="904" cy="190" r="3" class="cheio"/><circle cx="1110" cy="240" r="6"/>
+  </g>
+  <g><path class="pulso" style="animation-delay:0.0s" d="M904,110 H934 L984,60 H1104"/><path class="pulso" style="animation-delay:1.2s" d="M904,150 H1034"/><path class="pulso" style="animation-delay:2.4s" d="M904,190 H934 L984,240 H1104"/></g>
+</svg>

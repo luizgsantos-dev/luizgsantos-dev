@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="64" viewBox="0 0 280 64" role="img" aria-label="LinkedIn: in/luizgsantos-dev">
+  <style>
+    .icone { fill: none; stroke: #3CC6B4; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .icone .cheio { fill: #3CC6B4; stroke: none; }
+  </style>
+  <rect x="0.5" y="0.5" width="279" height="63" rx="12" fill="#1B2330" stroke="#2C3748"/>
+  <rect x="12" y="12" width="40" height="40" rx="10" fill="#3CC6B4" fill-opacity="0.14"/>
+  <g class="icone" transform="translate(20 20)"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8,11 V17 M12,17 V11 M12,13.8 c0,-1.7 1.2,-2.8 2.6,-2.8 c1.5,0 2.4,1 2.4,2.9 V17"/><circle cx="8" cy="7.6" r="1.3" class="cheio"/></g>
+  <text x="66" y="29" fill="#F0F3F7" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700">LinkedIn</text>
+  <text x="66" y="47" fill="#9AA6B8" font-family="'Cascadia Code', 'SF Mono', Consolas, 'Liberation Mono', monospace" font-size="12">in/luizgsantos-dev</text>
+  <path d="M254,36 L262,28 M256,28 H262 V34" fill="none" stroke="#F0A43A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

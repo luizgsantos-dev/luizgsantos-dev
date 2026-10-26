@@ -1,140 +1,196 @@
-# Olá, eu sou Luiz Guilherme!
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-escuro.svg">
+  <img src="assets/banner-claro.svg" width="100%" alt="Luiz Guilherme dos Santos. Desenvolvimento, automação e IA assistiva. UFMT, Grupo Vivart e FATA, Cuiabá, MT.">
+</picture>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=007BFF&height=200&section=header&text=Desenvolvedor%20e%20Pesquisador%20em%20IA&fontSize=38&animation=fadeIn&fontAlignY=38&desc=UFMT%20|%20FATA%20|%20Vivart&descAlignY=55&descAlign=50" width="100%"/>
-</div>
+<br>
+<br>
 
-### Sobre Mim
+Sou estudante de Ciência da Computação na UFMT e técnico em Mecatrônica, em Cuiabá. Trabalho com desenvolvimento e automação no Grupo Vivart e pesquiso IA para educação inclusiva: síntese e clonagem de voz em português e os robôs educacionais OTTO e BITI.
 
-Sou estudante de Ciência da Computação na **UFMT** e Técnico em Mecatrônica. Minha paixão é conectar software e hardware para resolver problemas reais.
+### Hoje
 
-- Atualmente, sou **Desenvolvedor no Grupo Vivart**, atuando em **TI e Automação de Processos**: construção de workflows com **n8n**, integrações via API (SharePoint/Graph API, ClickUp, WhatsApp), trackeamento de lead e suporte a sistemas internos.
-- Também sou **Pesquisador no FATA**, desenvolvendo módulos de IA para os robôs **OTTO** e **BITI** (focados em alfabetização de crianças com TEA/TDAH).
-- Responsável pelo **desenvolvimento eletrônico e mecânico** dos robôs, incluindo design de circuitos e manutenção de hardware.
-- Atuo na liderança estudantil como **Presidente do Centro Acadêmico (CACOMP)** e **Vice-Presidente da Atlética (AAAIC - Trojan)**.
-- Estou aprofundando estudos em **Clonagem de Voz (SVC)**, **Visão Computacional** e **Sistemas Embarcados**.
-- Experiência com **integração de APIs**, **Active Directory**, **Windows Server** e **firewall Fortigate**.
-- Experiência com **ERPs**, **APIs bancárias** e **CRMs**.
-- **Foco:** Criar tecnologia acessível e eficiente.
+- **Desenvolvedor no Grupo Vivart.** Faço os portais internos do financeiro, do comercial, do relacionamento e do marketing, o app de totem dos empreendimentos e as automações em n8n que ligam ERP, CRM, WhatsApp e SharePoint.
+- **Pesquisador no FATA.** Desenvolvo os módulos de IA e cuido da eletrônica e da mecânica dos robôs OTTO e BITI, usados na alfabetização de crianças com TEA e TDAH.
+- **Presidente do CACOMP**, o centro acadêmico de Computação da UFMT, e vice-presidente da Atlética AAAIC Trojan.
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divisor-escuro.svg">
+  <img src="assets/divisor-claro.svg" width="100%" alt="">
+</picture>
 
-### Projetos em Destaque
+### Projetos
 
-#### [Renomeador de Comprovantes](https://github.com/luizgsantos-dev/Renomear) · Python
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Serviço que monitora uma pasta em segundo plano, lê comprovantes bancários em PDF, extrai data, recebedor e valor, e arquiva o arquivo já renomeado no padrão da empresa. Suporta quatro layouts — Itaú Sispag (boleto e concessionária) e Banco Inter (Pix e boleto) — através de uma camada de parsers plugável: adicionar um banco novo é escrever uma classe.
+**[timao-api](https://github.com/luizgsantos-dev/timao-api)** <sub>· Go</sub>
 
-Comprovante não reconhecido não trava a fila, vai para `_REVISAR/` com os campos faltantes marcados. O monitoramento espera o arquivo estabilizar de tamanho antes de processar, para não pegar PDF ainda sendo escrito. Roda em máquina sem Python instalado, via executável standalone.
+API aberta sobre o Corinthians, do masculino às Brabas. Um importador monta o banco SQLite com dados do Wikidata, da Wikipédia, do RSSSF e do openfootball, e cada registro aponta para a fonte de onde veio.
 
-`pdfplumber` · `pypdfium2` · `openpyxl` · `pytest` · `PyInstaller`
+`net/http` `SQLite` `OpenAPI 3.1` `Docker`
 
-#### [Armários do IC](https://github.com/luizgsantos-dev/gerenciar-armarios) · TypeScript
+</td>
+<td width="50%" valign="top">
 
-Sistema de reserva dos armários do Instituto de Computação da UFMT, feito para o CACOMP. O estudante escolhe um armário livre, anexa o comprovante do Pix e aceita o termo; a diretoria confere e aprova pelo painel. Reserva concorrente não duplica.
+**[ic-assistente](https://github.com/luizgsantos-dev/ic-assistente)** <sub>· Python</sub>
 
-Sessão de admin em cookie `httpOnly` assinado, senhas com bcrypt, comprovantes servidos fora de `public/` por rota autenticada. Sobe com um `docker compose up`, com volumes persistentes e migrations idempotentes no entrypoint.
+Assistente do Instituto de Computação da UFMT. Responde só com o que está nos documentos oficiais, cita a fonte e, quando não encontra, diz que não sabe. Usa busca híbrida (vetorial e textual) e uma bateria de testes que mede acerto e alucinação.
 
-`Next.js 16` · `React 19` · `TypeScript` · `Prisma` · `Tailwind CSS 4` · `Docker` · `SQLite` · `JWT`
+`PostgreSQL` `pgvector` `bge-m3` `Claude API`
 
-#### [Encurtador de Links com QR Code](https://github.com/luizgsantos-dev/Encurtador-de-Link-com-Qr-code) · Python
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Encurtador self-hosted para uso corporativo: link curto com destino editável a qualquer momento, geração de QR code, UTM builder com prévia e estatísticas de clique por dia, dispositivo e referrer. Multiusuário com grupos — cada time só enxerga os próprios links.
+**[Renomeador de comprovantes](https://github.com/luizgsantos-dev/Renomear)** <sub>· Python</sub>
 
-Três containers com responsabilidades separadas: FastAPI para API e redirecionamento, PostgreSQL, e Nginx como proxy reverso e servidor do painel.
+Vigia uma pasta, lê comprovantes bancários em PDF do Itaú e do Inter, extrai data, recebedor e valor e arquiva cada arquivo renomeado no padrão da empresa. O que ele não reconhece vai para revisão sem travar a fila.
 
-`FastAPI` · `SQLAlchemy` · `PostgreSQL` · `Docker Compose` · `Nginx` · `JWT`
+`pdfplumber` `pytest` `PyInstaller`
 
-#### [IC Assistant](https://github.com/luizgsantos-dev/IC-Assistant) · Python
+</td>
+<td width="50%" valign="top">
 
-Chat com RAG sobre documentos acadêmicos: responde dúvidas sobre processos burocráticos, aproveitamento de matérias e calendário do Instituto usando *apenas* o que está nos documentos carregados. Trocar o provedor de LLM é configuração — OpenAI, Anthropic ou Ollama local.
+**[Encurtador de links](https://github.com/luizgsantos-dev/Encurtador-de-Link-com-Qr-code)** <sub>· Python</sub>
 
-`LangChain` · `ChromaDB` · `FastAPI` · `sentence-transformers`
+Encurtador self-hosted com destino editável, QR code, montador de UTM e estatística de clique por dia, dispositivo e origem. Cada equipe só enxerga os links do próprio grupo.
 
-#### [Robô OTTO](https://github.com/ottoUFMT/OTTO_Project) · C++ / Arduino
+`FastAPI` `PostgreSQL` `Nginx` `Docker Compose`
 
-Robô educacional open-source da UFMT: expressões faciais em matriz de LED, leitor RFID, teclado matricial, áudio via DFPlayer e coreografias com quatro servos. Atuei na refatoração do firmware, na revisão dos esquemas eletrônicos e na documentação técnica.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-`Arduino` · `C++` · `Modelagem 3D`
+**[Armários do IC](https://github.com/luizgsantos-dev/gerenciar-armarios)** <sub>· TypeScript</sub>
 
-#### [Swift iOS Labs](https://github.com/luizgsantos-dev/swift-ios-labs) · Swift
+Reserva dos armários do Instituto de Computação, feita para o CACOMP. O estudante anexa o comprovante do Pix, a diretoria aprova pelo painel, e dois cliques no mesmo armário ao mesmo tempo não viram duas reservas.
 
-Experimentos em SwiftUI do programa Hackatruck (Instituto Eldorado): consumo de API com `async/await`, LLM com saída estruturada em JSON, OCR com o framework Vision e síntese de voz.
+`Next.js 16` `Prisma` `SQLite` `Docker`
 
-`SwiftUI` · `Vision` · `AVFoundation` · `Firebase AI`
+</td>
+<td width="50%" valign="top">
 
----
+**[Robô OTTO](https://github.com/ottoUFMT/OTTO_Project)** <sub>· C++</sub>
 
-### Pesquisa & Publicações
+Robô educacional open source da UFMT, com expressões em matriz de LED, leitor RFID, áudio e quatro servos. Trabalhei na refatoração do firmware, nos esquemas eletrônicos e na documentação.
 
-- Autor do artigo **"Vozes Familiares: O Potencial da Clonagem de Voz por IA para Acessibilidade na Educação Inclusiva"** — **ERI-MT 2025** (Encontro Regional de Informática de Mato Grosso), novembro de 2025. Estudo sobre a viabilidade da clonagem de voz como ferramenta de acessibilidade na educação inclusiva.
-- Autor do artigo **"Otimização da Arquitetura de IA: Mais Eficiência e Menos Impacto Ambiental"** — **I Escola Regional de Sistemas de Informação de Mato Grosso (ERSI-MT 2025)**, abril de 2025. Revisão sistemática sobre Green AI e estratégias de otimização para LLMs.
+`Arduino` `C++` `Modelagem 3D`
 
----
+</td>
+</tr>
+</table>
 
-### Tech Stack & Ferramentas
+Também tem o [swift-ios-labs](https://github.com/luizgsantos-dev/swift-ios-labs), com os experimentos em SwiftUI do Hackatruck (OCR com Vision, síntese de voz e LLM respondendo em JSON), e o [Blink](https://github.com/LucasLimaT/Blink), projeto final do programa, feito em equipe, em que integrei o modelo Core ML ao app.
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
-</div>
+### Fora do GitHub público
 
-<div align="center">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-</div>
+Quase tudo o que faço na Vivart fica em repositórios privados. Alguns exemplos:
 
-<div align="center">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-</div>
+- **Portais internos** em TypeScript: envio de boletos por WhatsApp e e-mail com confirmação de recebimento, painel de desempenho de SDRs e corretores, disparos pela API oficial da Meta e central de links do marketing.
+- **App de totem** em Flutter para os empreendimentos, com pesquisa de satisfação do atendimento.
+- **Arena Vivart**, sistema de reservas da quadra de tênis do Shopping Estação Cuiabá.
+- **Automações em n8n**: rastreamento da origem dos leads, alerta de tempo de atendimento e atendimento com IA no WhatsApp.
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
-  <img src="https://img.shields.io/badge/ClickUp-7B68EE?style=for-the-badge&logo=clickup&logoColor=white" />
-  <img src="https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" />
-  <img src="https://img.shields.io/badge/Baserow-7B68EE?style=for-the-badge&logo=baserow&logoColor=white" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divisor-escuro.svg">
+  <img src="assets/divisor-claro.svg" width="100%" alt="">
+</picture>
 
----
+### Publicações
 
-<div align="center">
+**Clonagem de Voz por IA para o Português Brasileiro em Contexto Assistivo: Desafios Comparativos em Cinco Ferramentas de Síntese de Fala**<br>
+<sub>**L. G. dos Santos**, N. Borges, M. Sales, L. C. L. F. Borges, T. R. Kempner, E. P. S. Nunes · STIL 2026 · [doi:10.5753/stil.2026.26551](https://doi.org/10.5753/stil.2026.26551)</sub><br>
+Compara cinco ferramentas de síntese de fala em português com um corpus de 170 gravações. Somar um dataset multilíngue de fonemas ao StyleTTS 2 melhorou a qualidade fonética regional.
 
-<img src="https://github-readme-stats.vercel.app/api?username=luizgsantos-dev&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" height="150" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizgsantos-dev&layout=compact&hide_border=true&count_private=true" height="150" />
+**Vozes Familiares: O Potencial da Clonagem de Voz por IA para Acessibilidade na Educação Inclusiva**<br>
+<sub>**L. G. dos Santos**, L. C. L. F. Borges, T. R. Kempner, E. P. S. Nunes · ERI-MT 2025 · [doi:10.5753/eri-mt.2025.17200](https://doi.org/10.5753/eri-mt.2025.17200)</sub><br>
+Analisa a viabilidade da clonagem de voz como recurso de acessibilidade na educação inclusiva.
 
-</div>
+**Otimização da Arquitetura de IA: Mais Eficiência e Menos Impacto Ambiental**<br>
+<sub>**L. G. dos Santos**, H. R. P. Carneiro · ERSI-MT 2025 · [doi:10.5753/ersimt.2025.8821](https://doi.org/10.5753/ersimt.2025.8821)</sub><br>
+Revisão sistemática sobre Green AI e estratégias para deixar LLMs mais eficientes.
 
----
+### Stack
 
-### Vamos Conectar?
+<table>
+<tr>
+<td><b>Linguagens</b></td>
+<td>
+<img alt="Python" src="https://img.shields.io/badge/Python-1B2330?style=flat-square&logo=python&logoColor=FFD43B">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-1B2330?style=flat-square&logo=typescript&logoColor=3178C6">
+<img alt="Go" src="https://img.shields.io/badge/Go-1B2330?style=flat-square&logo=go&logoColor=00ADD8">
+<img alt="Dart" src="https://img.shields.io/badge/Dart-1B2330?style=flat-square&logo=dart&logoColor=29B6F6">
+<img alt="Swift" src="https://img.shields.io/badge/Swift-1B2330?style=flat-square&logo=swift&logoColor=F05138">
+<img alt="C++" src="https://img.shields.io/badge/C%2B%2B-1B2330?style=flat-square&logo=cplusplus&logoColor=659AD2">
+<img alt="Java" src="https://img.shields.io/badge/Java-1B2330?style=flat-square&logo=openjdk&logoColor=ED8B00">
+</td>
+</tr>
+<tr>
+<td><b>Web e mobile</b></td>
+<td>
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-1B2330?style=flat-square&logo=fastapi&logoColor=05998B">
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-1B2330?style=flat-square&logo=nextdotjs&logoColor=FFFFFF">
+<img alt="React" src="https://img.shields.io/badge/React-1B2330?style=flat-square&logo=react&logoColor=61DAFB">
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-1B2330?style=flat-square&logo=tailwindcss&logoColor=38BDF8">
+<img alt="Prisma" src="https://img.shields.io/badge/Prisma-1B2330?style=flat-square&logo=prisma&logoColor=FFFFFF">
+<img alt="Flutter" src="https://img.shields.io/badge/Flutter-1B2330?style=flat-square&logo=flutter&logoColor=47C5FB">
+</td>
+</tr>
+<tr>
+<td><b>Dados e IA</b></td>
+<td>
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-1B2330?style=flat-square&logo=postgresql&logoColor=699ECA">
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-1B2330?style=flat-square&logo=mysql&logoColor=5B9BD5">
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-1B2330?style=flat-square&logo=sqlite&logoColor=7CC5E8">
+<img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-1B2330?style=flat-square&logo=mongodb&logoColor=47A248">
+<img alt="LangChain" src="https://img.shields.io/badge/LangChain-1B2330?style=flat-square&logo=langchain&logoColor=FFFFFF">
+</td>
+</tr>
+<tr>
+<td><b>Infra</b></td>
+<td>
+<img alt="Docker" src="https://img.shields.io/badge/Docker-1B2330?style=flat-square&logo=docker&logoColor=2496ED">
+<img alt="Nginx" src="https://img.shields.io/badge/Nginx-1B2330?style=flat-square&logo=nginx&logoColor=1FA855">
+<img alt="Linux" src="https://img.shields.io/badge/Linux-1B2330?style=flat-square&logo=linux&logoColor=FCC624">
+<img alt="Git" src="https://img.shields.io/badge/Git-1B2330?style=flat-square&logo=git&logoColor=F05032">
+<img alt="Grafana" src="https://img.shields.io/badge/Grafana-1B2330?style=flat-square&logo=grafana&logoColor=F46800">
+<img alt="Fortigate" src="https://img.shields.io/badge/Fortigate-1B2330?style=flat-square&logo=fortinet&logoColor=EE3124">
+<img alt="Windows Server" src="https://img.shields.io/badge/Windows_Server-1B2330?style=flat-square">
+<img alt="Active Directory" src="https://img.shields.io/badge/Active_Directory-1B2330?style=flat-square">
+</td>
+</tr>
+<tr>
+<td><b>Automação</b></td>
+<td>
+<img alt="n8n" src="https://img.shields.io/badge/n8n-1B2330?style=flat-square&logo=n8n&logoColor=EA4B71">
+<img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-1B2330?style=flat-square&logo=whatsapp&logoColor=25D366">
+<img alt="ClickUp" src="https://img.shields.io/badge/ClickUp-1B2330?style=flat-square&logo=clickup&logoColor=9B8CFF">
+<img alt="Baserow" src="https://img.shields.io/badge/Baserow-1B2330?style=flat-square&logo=baserow&logoColor=5190EF">
+<img alt="SharePoint" src="https://img.shields.io/badge/SharePoint-1B2330?style=flat-square">
+</td>
+</tr>
+<tr>
+<td><b>Hardware e design</b></td>
+<td>
+<img alt="Arduino" src="https://img.shields.io/badge/Arduino-1B2330?style=flat-square&logo=arduino&logoColor=00B5BE">
+<img alt="Figma" src="https://img.shields.io/badge/Figma-1B2330?style=flat-square&logo=figma&logoColor=F24E1E">
+</td>
+</tr>
+</table>
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/luizgsantos-dev/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
-  </a>
-  <a href="mailto:luizgdsantos91@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" />
-  </a>
-  <a href="https://lattes.cnpq.br/8232203480408493">
-    <img src="https://img.shields.io/badge/Lattes-Curriculo-blue?style=for-the-badge" target="_blank" />
-  </a>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divisor-escuro.svg">
+  <img src="assets/divisor-claro.svg" width="100%" alt="">
+</picture>
+
+### Contato
+
+<p>
+<a href="https://www.linkedin.com/in/luizgsantos-dev/"><img src="assets/contato-linkedin.svg" width="260" alt="LinkedIn: in/luizgsantos-dev"></a>
+<a href="mailto:luizgdsantos91@gmail.com"><img src="assets/contato-email.svg" width="260" alt="E-mail: luizgdsantos91@gmail.com"></a>
+<a href="https://lattes.cnpq.br/8232203480408493"><img src="assets/contato-lattes.svg" width="260" alt="Currículo Lattes no CNPq"></a>
+</p>
